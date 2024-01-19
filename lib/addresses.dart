@@ -8,7 +8,9 @@ class adresses extends StatelessWidget{
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text('Adresses',style: TextStyle(color: Colors.black),),
-        leading: IconButton(onPressed: () {  }, icon: Icon(Icons.arrow_back_ios_new,color: Colors.pink,),),
+        leading: IconButton(onPressed: () {
+          Navigator.pop(context);
+        }, icon: Icon(Icons.arrow_back_ios_new,color: Colors.pink,),),
       ),
       body: Center(
         child: Column(

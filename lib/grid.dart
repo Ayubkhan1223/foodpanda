@@ -113,318 +113,309 @@ class grid extends StatelessWidget{
         ),
       ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              height: 381,
-              width: double.infinity,
-              color: Colors.grey[200],
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 17,horizontal: 10),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+      body: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 14,vertical: 17),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 17),
+                  child: Container(
+                    height: 250,
+                    width: 180,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Align(alignment: Alignment.topLeft,
+                      child: Padding(
+                      padding: const EdgeInsets.symmetric
+                        (horizontal: 15,vertical: 15),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 17),
-                            child: Container(
-                              height: 250,
-                              width: 180,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                  width: 1,
-                                  color: Colors.grey[300]!,
-                                ),
-                                borderRadius: BorderRadius.circular(10)
-                              ),
-                              child: Align(alignment: Alignment.topLeft,
-                                child: Padding(
-                                padding: const EdgeInsets.symmetric
-                                  (horizontal: 15,vertical: 15),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(bottom: 5),
-                                      child: Align(
-                                        alignment: Alignment.bottomLeft,
-                                        child: Text
-                                          ('Food '
-                                            'delivery',style: TextStyle(fontSize: 17,
-                                            fontWeight:
-                                        FontWeight.w800),),
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment: Alignment.bottomLeft,
-                                      child: Text
-                                        ('Order food you love ',style:
-                                      TextStyle(fontSize: 12, fontWeight:
-                                      FontWeight.w400),),
-                                    ),
-                                    SizedBox(height: 60,),
-                                    Align(
-                                      alignment: Alignment.bottomRight,
-                                      child: Image.asset
-                                        ('assets/img/20240111_191701.jpg',
-                                        width: 130,),
-                                    )
-                                  ],
-                                ),
-                              )
-                              ),
+                            padding: const EdgeInsets.only(bottom: 5),
+                            child: Align(
+                              alignment: Alignment.bottomLeft,
+                              child: Text
+                                ('Food '
+                                  'delivery',style: TextStyle
+                                (fontSize: 15,
+                                  fontWeight:
+                              FontWeight.w800),),
                             ),
                           ),
-                          Container(
-                            height: 80,
-                            width: 180,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                  width: 1,
-                                  color: Colors.grey[300]!,
-                                ),
-                                borderRadius: BorderRadius.circular(10)
-                            ),
-                            child: Align(alignment: Alignment.topLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric
-                                    (horizontal: 15,vertical: 15),
-                                  child: Row(
-                                    children: [
-                                      Column(
-                                        children: [
-                                          Align(
-                                            alignment: Alignment.centerLeft,
-                                            child: Padding(
-                                              padding: const EdgeInsets.only(bottom: 5),
-                                              child: Text
-                                                ('Dine-in ',style: TextStyle
-                                                (fontSize: 17,
-                                                  fontWeight:
-                                                  FontWeight.w800),),
-                                            ),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.bottomLeft,
-                                            child: Text
-                                              ('Go out to eat for',style:
-                                            TextStyle(fontSize: 12, fontWeight:
-                                            FontWeight.w400),),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.bottomLeft,
-                                            child: Text
-                                              ('25% off',style:
-                                            TextStyle(fontSize: 12, fontWeight:
-                                            FontWeight.w400),),
-                                          ),
-                                        ],
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(left:
-                                        12),
-                                        child: Align(
-                                          alignment: Alignment.bottomRight,
-                                          child: Image.asset
-                                            ('assets/img/64.jpg'),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                )
-                            ),
+                          Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Text
+                              ('Order food you love ',style:
+                            TextStyle(fontSize: 10, fontWeight:
+                            FontWeight.w400),),
                           ),
+                          SizedBox(height: 60,),
+                          Align(
+                            alignment: Alignment.bottomRight,
+                            child: Image.asset
+                              ('assets/img/20240111_191701.jpg',
+                              width: 130,),
+                          )
                         ],
                       ),
+                    )
                     ),
-                    Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 17),
-                          child: Container(
-                            height: 150,
-                            width: 180,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                  width: 1,
-                                  color: Colors.grey[300]!,
-                                ),
-                                borderRadius: BorderRadius.circular(10)
-                            ),
-                            child: Align(alignment: Alignment.topLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric
-                                    (horizontal: 15,vertical: 15),
-                                  child: Column(
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(bottom: 5),
-                                        child: Align(
-                                          alignment: Alignment.bottomLeft,
-                                          child: Text
-                                            ('Shops',style: TextStyle(fontSize:
-                                          17,
-                                              fontWeight:
-                                              FontWeight.w800),),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment: Alignment.bottomLeft,
-                                        child: Text
-                                          ('Top brands to your door',style:
-                                        TextStyle(fontSize: 12, fontWeight:
-                                        FontWeight.w400),),
-                                      ),
-                                      SizedBox(height: 6,),
-                                      Align(
-                                        alignment: Alignment.bottomRight,
-                                        child: Image.asset
-                                          ('assets/img/25.jpg',
-                                          width: 70,),
-                                      )
-                                    ],
+                  ),
+                ),
+                Container(
+                  height: 80,
+                  width: 180,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(10)
+                  ),
+                  child: Align(alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric
+                          (horizontal: 15,vertical: 15),
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(bottom: 5),
+                                    child: Text
+                                      ('Dine-in ',style: TextStyle
+                                      (fontSize: 15,
+                                        fontWeight:
+                                        FontWeight.w800),),
                                   ),
-                                )
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 17),
-                          child: Container(
-                            height: 80,
-                            width: 180,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(
-                                  width: 1,
-                                  color: Colors.grey[300]!,
                                 ),
-                                borderRadius: BorderRadius.circular(10)
+                                Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: Text
+                                    ('Go out to eat for',style:
+                                  TextStyle(fontSize: 10, fontWeight:
+                                  FontWeight.w400),),
+                                ),
+                                Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: Text
+                                    ('25% off',style:
+                                  TextStyle(fontSize: 10, fontWeight:
+                                  FontWeight.w400),),
+                                ),
+                              ],
                             ),
-                            child: Align(alignment: Alignment.topLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric
-                                    (horizontal: 15,vertical: 15),
-                                  child: Row(
-                                    children: [
-                                      Column(
-                                        children: [
-                                          Align(
-                                            alignment: Alignment.centerLeft,
-                                            child: Padding(
-                                              padding: const EdgeInsets.only(bottom: 5),
-                                              child: Text
-                                                ('Pick-up',style: TextStyle
-                                                (fontSize: 17,
-                                                  fontWeight:
-                                                  FontWeight.w800),),
-                                            ),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.bottomLeft,
-                                            child: Text
-                                              ('Self-collect for',style:
-                                            TextStyle(fontSize: 12, fontWeight:
-                                            FontWeight.w400),),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.bottomLeft,
-                                            child: Text
-                                              ('50% off',style:
-                                            TextStyle(fontSize: 12, fontWeight:
-                                            FontWeight.w400),),
-                                          ),
-                                        ],
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(left:
-                                        26),
-                                        child: Align(
-                                          alignment: Alignment.bottomRight,
-                                          child: Image.asset
-                                            ('assets/img/48.jpg',),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                )
-                            ),
-                          ),
-                        ),
-                        Container(
-                          height: 80,
-                          width: 180,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              border: Border.all(
-                                width: 1,
-                                color: Colors.grey[300]!,
+                            Padding(
+                              padding: const EdgeInsets.only(left:
+                              14),
+                              child: Align(
+                                alignment: Alignment.bottomRight,
+                                child: Image.asset
+                                  ('assets/img/64.jpg'),
                               ),
-                              borderRadius: BorderRadius.circular(10)
+                            )
+                          ],
+                        ),
+                      )
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6,vertical: 17),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 17),
+                  child: Container(
+                    height: 150,
+                    width: 180,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          width: 1,
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Align(alignment: Alignment.topLeft,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric
+                            (horizontal: 15,vertical: 15),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 5),
+                                child: Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: Text
+                                    ('Shops',style: TextStyle(fontSize:
+                                  15,
+                                      fontWeight:
+                                      FontWeight.w800),),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Text
+                                  ('Top brands to your door',style:
+                                TextStyle(fontSize: 10, fontWeight:
+                                FontWeight.w400),),
+                              ),
+                              SizedBox(height: 6,),
+                              Align(
+                                alignment: Alignment.bottomRight,
+                                child: Image.asset
+                                  ('assets/img/25.jpg',
+                                  width: 70,),
+                              )
+                            ],
                           ),
-                          child: Align(alignment: Alignment.topLeft,
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric
-                                  (horizontal: 15,vertical: 15),
-                                child: Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Align(
-                                          alignment: Alignment.centerLeft,
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(bottom: 5),
-                                            child: Text
-                                              ('Pandago ',style: TextStyle
-                                              (fontSize: 17,
-                                                fontWeight:
-                                                FontWeight.w800),),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment: Alignment.bottomLeft,
-                                          child: Text
-                                            ('Send parcels in a',style:
-                                          TextStyle(fontSize: 12, fontWeight:
-                                          FontWeight.w400),),
-                                        ),
-                                        Align(
-                                          alignment: Alignment.bottomLeft,
-                                          child: Text
-                                            ('tap',style:
-                                          TextStyle(fontSize: 12, fontWeight:
-                                          FontWeight.w400),),
-                                        ),
-                                      ],
+                        )
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 17),
+                  child: Container(
+                    height: 80,
+                    width: 180,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          width: 1,
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Align(alignment: Alignment.topLeft,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric
+                            (horizontal: 15,vertical: 15),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Align(
+                                    alignment: Alignment.centerLeft,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(bottom: 5),
+                                      child: Text
+                                        ('Pick-up',style: TextStyle
+                                        (fontSize: 15,
+                                          fontWeight:
+                                          FontWeight.w800),),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(left:
-                                      10),
-                                      child: Align(
-                                        alignment: Alignment.centerRight,
-                                        child: Image.asset
-                                          ('assets/img/15.jpg'),
-                                      ),
-                                    )
-                                  ],
+                                  ),
+                                  Align(
+                                    alignment: Alignment.bottomLeft,
+                                    child: Text
+                                      ('Self-collect for',style:
+                                    TextStyle(fontSize: 10, fontWeight:
+                                    FontWeight.w400),),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.bottomLeft,
+                                    child: Text
+                                      ('50% off',style:
+                                    TextStyle(fontSize: 10, fontWeight:
+                                    FontWeight.w400),),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left:
+                                43),
+                                child: Align(
+                                  alignment: Alignment.bottomRight,
+                                  child: Image.asset
+                                    ('assets/img/48.jpg',),
                                 ),
                               )
+                            ],
                           ),
-                        ),
-                      ],
-                    )
-                  ],
+                        )
+                    ),
+                  ),
                 ),
-              ),
+                Container(
+                  height: 80,
+                  width: 180,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        width: 1,
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(10)
+                  ),
+                  child: Align(alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric
+                          (horizontal: 15,vertical: 15),
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only
+                                      (bottom: 2),
+                                    child: Text
+                                      ('Pandago ',style: TextStyle
+                                      (fontSize: 15,
+                                        fontWeight:
+                                        FontWeight.w800),),
+                                  ),
+                                ),
+                                Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Text
+                                    ('Send parcels in a',style:
+                                  TextStyle(fontSize: 10, fontWeight:
+                                  FontWeight.w400),),
+                                ),
+                                Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Text
+                                    ('tap',style:
+                                  TextStyle(fontSize: 10, fontWeight:
+                                  FontWeight.w400),),
+                                ),
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left:
+                              19),
+                              child: Align(
+                                alignment: Alignment.centerRight,
+                                child: Image.asset
+                                  ('assets/img/15.jpg'),
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
+          )
+        ],
       )
     );
   }
